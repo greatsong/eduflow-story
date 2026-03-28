@@ -1,0 +1,1755 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI와 현명하게 협력하여 실제 수업에 활용할 교육자료를 직접 만들어보는 3시간 워크샵으로, 연수 당일 완성된 교재를 손에 쥐고 돌아갑니다.">
+      
+      
+        <meta name="author" content="송석리 (석리송) (EduFlow)">
+      
+      
+      
+        <link rel="prev" href="../chapter05/">
+      
+      
+        <link rel="next" href="../chapter07/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>6차시: 생성하고 다듬기 — AI와 함께 완성도 높이기 - AI 시대, 교사의 무기</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans KR";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#6-ai" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="AI 시대, 교사의 무기" class="md-header__button md-logo" aria-label="AI 시대, 교사의 무기" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI 시대, 교사의 무기
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              6차시: 생성하고 다듬기 — AI와 함께 완성도 높이기
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="공유" aria-label="공유" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter01/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 1 - AI가 바꾸는 교실, 교사가 지키는 것
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../chapter04/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 2 - 직접 만들어봅시다 — 나만의 교육자료 완성
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter08/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 3 - 오늘 우리가 경험한 것의 의미
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AI 시대, 교사의 무기" class="md-nav__button md-logo" aria-label="AI 시대, 교사의 무기" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI 시대, 교사의 무기
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 1 - AI가 바꾸는 교실, 교사가 지키는 것
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 1 - AI가 바꾸는 교실, 교사가 지키는 것
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1차시: 달라진 교실 풍경 — AI가 가져온 네 가지 변화
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2차시: 솔직하게 마주하기 — AI의 가능성과 한계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3차시: 그래서 제가 직접 만들었습니다 — 에듀플로 이야기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 2 - 직접 만들어봅시다 — 나만의 교육자료 완성
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 2 - 직접 만들어봅시다 — 나만의 교육자료 완성
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4차시: 구상하기 — 내 수업에 필요한 자료는 무엇인가
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5차시: 구조화하기 — AI가 이해할 수 있는 언어로
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6차시: 생성하고 다듬기 — AI와 함께 완성도 높이기
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6차시: 생성하고 다듬기 — AI와 함께 완성도 높이기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 이 장에서 배우는 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 왜 이걸 배우나요?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 핵심 개념
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 핵심 개념">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 1: 비판적 검토 — 교사의 눈으로 걸러내기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 2: 반복 개선 사이클 — 한 번에 완벽할 필요 없어요
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔨 따라하기: AI 결과물 생성하고 다듬기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기: AI 결과물 생성하고 다듬기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱️ 수업 흐름 (총 45분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-1-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: 첫 번째 결과물 생성하기 ⏱️ 8분
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: 비판적 검토 체크리스트 적용하기 ⏱️ 12분
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 수정 프롬프트로 재생성하기 ⏱️ 15분
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 최종 점검 및 완성하기 ⏱️ 10분
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 주의할 점
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ 주의할 점">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. AI 생성 결과물의 "그럴듯한 오류"를 조심하세요
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 완벽을 추구하다 시간을 다 쓰지 마세요
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 점검하기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 인터랙티브 퀴즈
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7차시: 나누기 — 서로의 결과물에서 배우기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 3 - 오늘 우리가 경험한 것의 의미
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 3 - 오늘 우리가 경험한 것의 의미
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8차시: 돌아보기 — 무엇을 느끼고 무엇을 얻었는가
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9차시: 내일로 — AI 시대 교사로서 나아갈 방향
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 이 장에서 배우는 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 왜 이걸 배우나요?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 핵심 개념
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 핵심 개념">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 1: 비판적 검토 — 교사의 눈으로 걸러내기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 2: 반복 개선 사이클 — 한 번에 완벽할 필요 없어요
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔨 따라하기: AI 결과물 생성하고 다듬기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기: AI 결과물 생성하고 다듬기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱️ 수업 흐름 (총 45분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-1-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: 첫 번째 결과물 생성하기 ⏱️ 8분
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: 비판적 검토 체크리스트 적용하기 ⏱️ 12분
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 수정 프롬프트로 재생성하기 ⏱️ 15분
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 최종 점검 및 완성하기 ⏱️ 10분
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 주의할 점
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ 주의할 점">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. AI 생성 결과물의 "그럴듯한 오류"를 조심하세요
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 완벽을 추구하다 시간을 다 쓰지 마세요
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 점검하기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 인터랙티브 퀴즈
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="네비게이션" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href=".." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../chapter04/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Part 2 - 직접 만들어봅시다 — 나만의 교육자료 완성
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="6-ai">6차시: 생성하고 다듬기 — AI와 함께 완성도 높이기<a class="headerlink" href="#6-ai" title="Permanent link">&para;</a></h1>
+<div class="lesson-banner">
+<p><strong>Part 2 — 직접 만들어봅시다: 나만의 교육자료 완성</strong></p>
+<blockquote>
+<p><em>"AI는 초안을 쓰는 보조 작가이고, 최종 원고를 결정하는 편집장은 바로 선생님입니다."</em></p>
+</blockquote>
+<p>⏱️ <strong>예상 소요 시간</strong>: 45분</p>
+</div>
+<hr />
+<h2 id="_1">🎯 이 장에서 배우는 것<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> AI가 생성한 결과물을 <strong>비판적으로 검토</strong>할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 교육적 판단을 바탕으로 결과물을 <strong>수정·보완</strong>할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 반복적인 개선 과정을 통해 <strong>만족스러운 자료를 완성</strong>할 수 있다</li>
+</ul>
+<hr />
+<h2 id="_2">💡 왜 이걸 배우나요?<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>5차시에서 프롬프트를 설계하고 에듀플로에 입력하는 것까지 해보셨죠? 이제 AI가 결과물을 내놓았습니다. 그런데 여기서 멈추면 어떻게 될까요?</p>
+<p>AI가 만든 교육자료를 그대로 교실에 가져가는 것은 마치 <strong>인터넷에서 찾은 레시피를 한 번도 맛보지 않고 손님에게 내놓는 것</strong>과 같습니다. 재료가 우리 냉장고에 있는 것과 다를 수도 있고, 손님의 입맛에 안 맞을 수도 있습니다. 🍳</p>
+<p>이번 차시는 <strong>AI가 만들어 준 '초안'을 우리 반 학생들에게 꼭 맞는 '완성본'으로 바꾸는 시간</strong>입니다. 생성 → 검토 → 수정 → 재생성, 이 순환을 직접 경험하며 "AI 활용 수업 자료 만들기"의 핵심 감각을 익혀 보겠습니다.</p>
+<hr />
+<h2 id="_3">📚 핵심 개념<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1">개념 1: 비판적 검토 — 교사의 눈으로 걸러내기<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p><strong>비유로 시작해 볼까요?</strong> 🔍</p>
+<p>AI가 생성한 결과물을 검토하는 것은 마치 <strong>학생이 제출한 보고서에 빨간 펜으로 피드백하는 과정</strong>과 같습니다. 전체적인 구조는 괜찮은지, 내용에 오류는 없는지, 수준이 적절한지를 하나하나 살피는 것이죠. 다만 이번에는 학생이 아닌 AI가 쓴 글을 검토한다는 점만 다릅니다.</p>
+<p><strong>정확한 정의:</strong></p>
+<blockquote>
+<p><strong>비판적 검토</strong>란 AI가 생성한 결과물을 그대로 수용하지 않고, 교육적 기준(정확성, 적절성, 난이도, 맥락)에 비추어 판단하고 걸러내는 과정입니다.</p>
+</blockquote>
+<p><strong>무엇을 검토해야 할까요?</strong> 아래 5가지 기준을 기억하세요:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">검토 기준</th>
+<th style="text-align: left;">점검 질문</th>
+<th style="text-align: left;">흔한 문제</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>정확성</strong></td>
+<td style="text-align: left;">사실 관계에 오류는 없는가?</td>
+<td style="text-align: left;">날짜·수치 착오, 개념 혼동</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>적절성</strong></td>
+<td style="text-align: left;">우리 학교 교육과정에 맞는가?</td>
+<td style="text-align: left;">범위 벗어남, 삭제된 내용 포함</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>난이도</strong></td>
+<td style="text-align: left;">우리 반 학생 수준에 맞는가?</td>
+<td style="text-align: left;">너무 쉽거나 지나치게 어려움</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>맥락</strong></td>
+<td style="text-align: left;">수업 흐름과 자연스럽게 연결되는가?</td>
+<td style="text-align: left;">앞뒤 차시와 동떨어진 내용</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>윤리성</strong></td>
+<td style="text-align: left;">편향·고정관념은 없는가?</td>
+<td style="text-align: left;">특정 집단에 대한 편향적 표현</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>꿀팁</strong>: 처음에는 표를 프린트하거나 메모장에 켜두고 하나씩 체크해 보세요. 몇 번 하다 보면 자연스럽게 "교사의 눈"이 작동합니다.</p>
+</blockquote>
+<hr />
+<h3 id="2">개념 2: 반복 개선 사이클 — 한 번에 완벽할 필요 없어요<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p><strong>비유로 시작해 볼까요?</strong> 🎨</p>
+<p>도자기를 만들 때 흙을 한 번 빚어서 바로 완성하지 않잖아요? 물레 위에서 모양을 잡고, 다듬고, 마음에 안 들면 다시 주무르고… 이 과정을 반복해야 비로소 쓸 만한 그릇이 됩니다. AI와 함께 자료를 만드는 것도 똑같습니다.</p>
+<p><strong>정확한 정의:</strong></p>
+<blockquote>
+<p><strong>반복 개선 사이클</strong>(Iterative Refinement)이란 생성 → 검토 → 수정 → 재생성을 여러 번 반복하여 결과물의 완성도를 점진적으로 높여가는 과정입니다.</p>
+</blockquote>
+<p>이 흐름을 다이어그램으로 살펴보겠습니다:</p>
+<div class="mermaid">flowchart LR
+    A["🤖 AI에게&lt;br/&gt;생성 요청"] --&gt; B["👀 교사가&lt;br/&gt;비판적 검토"]
+    B --&gt; C{"만족?"}
+    C -- "아니요" --&gt; D["✏️ 프롬프트&lt;br/&gt;수정/보완"]
+    D --&gt; A
+    C -- "네!" --&gt; E["✅ 최종&lt;br/&gt;완성본"]</div>
+<p><strong>핵심 포인트</strong>: 보통 <strong>2~3회 반복</strong>이면 충분히 쓸 만한 자료가 나옵니다. 처음부터 완벽을 기대하기보다, "1차: 뼈대 잡기 → 2차: 살 붙이기 → 3차: 마무리 다듬기"로 접근하세요.</p>
+<hr />
+<h2 id="ai">🔨 따라하기: AI 결과물 생성하고 다듬기<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h2>
+<div class="steps">
+<h3 id="45">⏱️ 수업 흐름 (총 45분)<a class="headerlink" href="#45" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">단계</th>
+<th style="text-align: left;">활동</th>
+<th style="text-align: center;">시간</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Step 1</td>
+<td style="text-align: left;">첫 번째 결과물 생성하기</td>
+<td style="text-align: center;">8분</td>
+</tr>
+<tr>
+<td style="text-align: center;">Step 2</td>
+<td style="text-align: left;">비판적 검토 체크리스트 적용하기</td>
+<td style="text-align: center;">12분</td>
+</tr>
+<tr>
+<td style="text-align: center;">Step 3</td>
+<td style="text-align: left;">수정 프롬프트로 재생성하기</td>
+<td style="text-align: center;">15분</td>
+</tr>
+<tr>
+<td style="text-align: center;">Step 4</td>
+<td style="text-align: left;">최종 점검 및 완성하기</td>
+<td style="text-align: center;">10분</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr />
+<h3 id="step-1-8">Step 1: 첫 번째 결과물 생성하기 ⏱️ 8분<a class="headerlink" href="#step-1-8" title="Permanent link">&para;</a></h3>
+<p>5차시에서 만든 프롬프트를 에듀플로에 입력하고 첫 결과물을 받아 봅시다.</p>
+<p><strong>실습 예시 상황:</strong> 고1 통합과학 "생태계와 환경" 단원의 형성평가 문항 5개를 만들어 달라고 요청했다고 가정합니다.</p>
+<blockquote>
+<p><strong>입력 프롬프트 예시:</strong>
+"고등학교 1학년 통합과학, '생태계와 환경' 단원의 형성평가 객관식 5문항을 만들어 주세요. 난이도는 중하~중 수준, 성취기준 [10통과08-01]에 맞춰 주세요."</p>
+</blockquote>
+<p>AI가 결과물을 생성하면 <strong>일단 전체를 한 번 읽어보세요.</strong> 수정하고 싶은 부분에 바로 뛰어들지 말고, 먼저 전체적인 인상을 파악하는 것이 중요합니다.</p>
+<blockquote>
+<p>📌 <strong>이때 마음가짐</strong>: "잘 만들었네" 또는 "엉터리네"가 아니라, <strong>"어디를 고치면 쓸 수 있을까?"</strong>로 접근하세요.</p>
+</blockquote>
+<hr />
+<h3 id="step-2-12">Step 2: 비판적 검토 체크리스트 적용하기 ⏱️ 12분<a class="headerlink" href="#step-2-12" title="Permanent link">&para;</a></h3>
+<p>앞에서 배운 5가지 검토 기준을 실제로 적용해 봅시다. 아래는 AI가 생성한 문항의 예시와 검토 결과입니다:</p>
+<p><img alt="교사가 AI 생성 결과물을 노트북 화면으로 보면서 체크리스트에 빨간 펜으로 체크하는 일러스트레이션, 밝고 따뜻한 교실 배경, 화면에는 문항 텍스트가 보이고 옆에 체크리스트 종이가 놓여 있음" src="../images/chapter06_img1.png" /></p>
+<p><strong>AI 생성 문항 예시 (발췌):</strong></p>
+<blockquote>
+<p><strong>문항 3.</strong> 다음 중 생태계의 비생물적 환경 요인이 아닌 것은?
+① 온도 ② 토양 ③ 분해자 ④ 빛</p>
+</blockquote>
+<p><strong>검토 기록 예시:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">검토 기준</th>
+<th style="text-align: center;">판단</th>
+<th style="text-align: left;">메모</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">정확성</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: left;">분해자는 생물적 요인 맞음</td>
+</tr>
+<tr>
+<td style="text-align: left;">적절성</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: left;">성취기준 범위 내</td>
+</tr>
+<tr>
+<td style="text-align: left;">난이도</td>
+<td style="text-align: center;">⚠️</td>
+<td style="text-align: left;">너무 쉬움 — 중하 이하 수준</td>
+</tr>
+<tr>
+<td style="text-align: left;">맥락</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: left;">단원 앞부분 개념 확인용으로 적절</td>
+</tr>
+<tr>
+<td style="text-align: left;">윤리성</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: left;">해당 없음</td>
+</tr>
+</tbody>
+</table>
+<p><strong>검토 결과</strong>: 난이도를 한 단계 올릴 필요가 있습니다. 단순 분류 문제 대신, <strong>상황 적용 문제</strong>로 바꿔 달라고 요청하면 좋겠네요.</p>
+<blockquote>
+<p>🙋‍♀️ <strong>선생님, 이런 경험 있으시죠?</strong> "AI가 만든 문제가 너무 교과서적이다"라는 느낌. 이럴 때 구체적인 수정 방향을 잡아주는 것이 바로 교사만의 역할입니다.</p>
+</blockquote>
+<hr />
+<h3 id="step-3-15">Step 3: 수정 프롬프트로 재생성하기 ⏱️ 15분<a class="headerlink" href="#step-3-15" title="Permanent link">&para;</a></h3>
+<p>검토에서 발견한 문제점을 구체적인 <strong>수정 요청</strong>으로 바꿔 봅시다.</p>
+<p><strong>수정 프롬프트 작성 요령 3가지:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">요령</th>
+<th style="text-align: left;">❌ 막연한 요청</th>
+<th style="text-align: left;">✅ 구체적인 요청</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>문제를 특정</strong></td>
+<td style="text-align: left;">"좀 더 어렵게 해 주세요"</td>
+<td style="text-align: left;">"3번 문항의 난이도를 올려 주세요"</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>방향을 제시</strong></td>
+<td style="text-align: left;">"다시 만들어 주세요"</td>
+<td style="text-align: left;">"단순 분류 대신 실생활 상황을 적용하는 문제로 바꿔 주세요"</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>기준을 명시</strong></td>
+<td style="text-align: left;">"더 좋게 해 주세요"</td>
+<td style="text-align: left;">"정답률 60% 수준, 보기 간 매력도가 비슷하게 해 주세요"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>실제 수정 프롬프트 예시:</strong></p>
+<blockquote>
+<p>"3번 문항을 수정해 주세요. 단순히 비생물적 요인을 고르는 것이 아니라, 구체적인 생태계 상황(예: 산불 후 숲의 변화)을 제시하고 비생물적 요인의 영향을 분석하는 문제로 바꿔 주세요. 난이도는 '중' 수준으로 조정해 주세요."</p>
+</blockquote>
+<p><strong>AI의 수정 결과 예시:</strong></p>
+<blockquote>
+<p><strong>문항 3 (수정).</strong> 산불이 발생한 후 숲이 회복되는 과정에서 가장 먼저 영향을 미치는 비생물적 환경 요인으로 적절한 것은?
+① 분해자의 활동 증가 ② 토양의 무기염류 변화
+③ 포식자의 이동 ④ 경쟁종의 유입</p>
+</blockquote>
+<p>이전 문항과 비교해 보세요 — 같은 개념을 묻지만, 학생이 실제 상황에 적용해 사고해야 하는 문제로 바뀌었습니다! 🎯</p>
+<div class="mermaid">flowchart TD
+    A["1차 생성&lt;br/&gt;단순 분류 문항"] --&gt;|"검토: 난이도 낮음"| B["수정 요청&lt;br/&gt;상황 적용 문제로 변경"]
+    B --&gt; C["2차 생성&lt;br/&gt;산불 후 숲 회복 문항"]
+    C --&gt;|"검토: 적절!"| D["✅ 채택"]</div>
+<blockquote>
+<p>💡 <strong>꿀팁</strong>: 에듀플로에서 수정 요청할 때, <strong>이전 대화 맥락이 유지</strong>되므로 처음부터 다시 설명할 필요 없습니다. "3번 문항을 이렇게 바꿔 주세요"처럼 간결하게 요청하세요.</p>
+</blockquote>
+<hr />
+<h3 id="step-4-10">Step 4: 최종 점검 및 완성하기 ⏱️ 10분<a class="headerlink" href="#step-4-10" title="Permanent link">&para;</a></h3>
+<p>2~3회 반복을 거쳐 대부분의 문항이 만족스러워졌다면, <strong>최종 점검</strong>을 합니다.</p>
+<p><strong>최종 점검 3대 질문:</strong></p>
+<ol>
+<li><strong>"내가 이 자료로 수업하는 장면이 그려지는가?"</strong> — 실제 사용 상황을 머릿속으로 시뮬레이션해 보세요</li>
+<li><strong>"우리 반에서 가장 어려워하는 학생도 풀 수 있는 문제가 있는가?"</strong> — 난이도 분포를 확인하세요</li>
+<li><strong>"내 이름을 걸고 배포해도 괜찮은가?"</strong> — 정확성에 대한 최종 책임은 교사에게 있습니다</li>
+</ol>
+<p><img alt="반복 개선 과정을 보여주는 인포그래픽 일러스트레이션 - 왼쪽에 거친 초안 문서, 가운데에 수정 중인 문서(빨간 펜 메모 있음), 오른쪽에 깔끔하게 완성된 문서, 각 단계가 화살표로 연결되고 '1차', '2차', '최종'이라고 표시됨, 밝고 깨끗한 플랫 디자인 스타일" src="../images/chapter06_img2.png" /></p>
+<p><strong>완성 후에는</strong> 파일로 저장하거나, 학교 LMS에 올리거나, 프린트하여 수업에 바로 활용하시면 됩니다. 🎉</p>
+<hr />
+<h2 id="_4">⚠️ 주의할 점<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="1-ai">1. AI 생성 결과물의 "그럴듯한 오류"를 조심하세요<a class="headerlink" href="#1-ai" title="Permanent link">&para;</a></h3>
+<p>AI는 <strong>틀린 내용도 매우 자연스럽게</strong> 서술합니다. 특히 숫자, 연도, 공식, 인물 정보에서 미묘한 오류가 발생하기 쉽습니다. "이상한 느낌"이 드는 부분은 반드시 교과서나 신뢰할 수 있는 자료로 <strong>교차 확인</strong>하세요.</p>
+<h3 id="2_1">2. 완벽을 추구하다 시간을 다 쓰지 마세요<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<p>수정을 5번, 10번 반복하면 물론 더 좋아지겠지만, <strong>교사의 시간도 소중한 자원</strong>입니다. "80% 이상 만족스러우면 나머지는 내가 직접 손본다"는 기준을 세워두면 효율적입니다.</p>
+<hr />
+<h2 id="_5">✅ 점검하기<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p><strong>1. AI가 생성한 결과물을 검토할 때 확인해야 하는 5가지 기준은 무엇인가요?</strong></p>
+<details><summary>정답 확인</summary>
+
+정확성, 적절성, 난이도, 맥락, 윤리성입니다. 각각 "사실이 맞는가?", "교육과정에 맞는가?", "학생 수준에 맞는가?", "수업 흐름에 맞는가?", "편향은 없는가?"를 점검합니다.
+
+</details>
+
+<p><strong>2. "좀 더 어렵게 해 주세요"보다 효과적인 수정 프롬프트는 어떻게 작성하나요?</strong></p>
+<details><summary>정답 확인</summary>
+
+문제를 특정하고(몇 번 문항인지), 방향을 제시하고(어떤 유형으로 바꿀지), 기준을 명시하는(난이도, 정답률 등) 것이 효과적입니다. 예: "3번 문항을 실생활 상황 적용 문제로 바꾸고, 난이도를 중 수준으로 조정해 주세요."
+
+</details>
+
+<p><strong>3. 반복 개선 사이클에서 교사의 핵심 역할은 무엇인가요?</strong></p>
+<details><summary>정답 확인</summary>
+
+AI가 생성한 초안을 비판적으로 검토하고, 교육적 판단에 따라 수정 방향을 결정하며, 최종 결과물에 대한 책임을 지는 것이 교사의 핵심 역할입니다. AI는 보조 도구이고, 편집장은 교사입니다.
+
+</details>
+
+<hr />
+<h2 id="_6">📝 인터랙티브 퀴즈<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<div class="ef-quiz" data-quiz-id="q1">
+  <p class="ef-quiz-question">1. AI가 생성한 교육자료를 교실에서 사용하기 전, 교사가 반드시 해야 할 일은 무엇인가요?</p>
+  <div class="ef-quiz-options">
+    <label class="ef-quiz-option">
+      <input type="radio" name="q1"> <span>AI가 만든 자료를 그대로 인쇄하여 배포한다</span>
+    </label>
+    <label class="ef-quiz-option" data-correct="true">
+      <input type="radio" name="q1"> <span>교육적 기준에 따라 비판적으로 검토하고 수정한다</span>
+    </label>
+    <label class="ef-quiz-option">
+      <input type="radio" name="q1"> <span>동료 교사에게 전달하여 대신 검토하게 한다</span>
+    </label>
+    <label class="ef-quiz-option">
+      <input type="radio" name="q1"> <span>다른 AI에게 다시 검토를 요청한다</span>
+    </label>
+  </div>
+  <div class="ef-quiz-feedback" data-correct="정답입니다! AI 결과물의 최종 판단 권한과 책임은 교사에게 있습니다. 정확성, 적절성, 난이도, 맥락, 윤리성을 직접 검토해야 합니다." data-wrong="다시 생각해 보세요. AI 결과물의 최종 품질을 보장하는 것은 교사의 역할입니다."></div>
+</div>
+
+<div class="ef-quiz" data-quiz-id="q2">
+  <p class="ef-quiz-question">2. 다음 중 수정 프롬프트로 가장 효과적인 것은?</p>
+  <div class="ef-quiz-options">
+    <label class="ef-quiz-option">
+      <input type="radio" name="q2"> <span>"다시 만들어 주세요"</span>
+    </label>
+    <label class="ef-quiz-option">
+      <input type="radio" name="q2"> <span>"더 좋게 수정해 주세요"</span>
+    </label>
+    <label class="ef-quiz-option" data-correct="true">
+      <input type="radio" name="q2"> <span>"2번 문항을 상황 제시형으로 바꾸고, 보기의 매력도를 비슷하게 조정해 주세요"</span>
+    </label>
+    <label class="ef-quiz-option">
+      <input type="radio" name="q2"> <span>"문제가 이상해요, 고쳐 주세요"</span>
+    </label>
+  </div>
+  <div class="ef-quiz-feedback" data-correct="정답! 어떤 문항을(특정), 어떻게(방향), 어느 수준으로(기준) 바꿀지 구체적으로 요청하는 것이 효과적입니다." data-wrong="수정 요청은 '문제 특정 + 방향 제시 + 기준 명시'의 세 요소를 갖추는 것이 좋습니다."></div>
+</div>
+
+<div class="ef-quiz" data-quiz-id="q3">
+  <p class="ef-quiz-question">3. 반복 개선 사이클에 대한 설명으로 올바르지 않은 것은?</p>
+  <div class="ef-quiz-options">
+    <label class="ef-quiz-option">
+      <input type="radio" name="q3"> <span>보통 2~3회 반복이면 충분히 쓸 만한 결과물이 나온다</span>
+    </label>
+    <label class="ef-quiz-option">
+      <input type="radio" name="q3"> <span>생성 → 검토 → 수정 → 재생성의 순환 구조이다</span>
+    </label>
+    <label class="ef-quiz-option" data-correct="true">
+      <input type="radio" name="q3"> <span>AI에게 충분히 반복 요청하면 교사 검토 없이도 완벽한 자료가 나온다</span>
+    </label>
+    <label class="ef-quiz-option">
+      <input type="radio" name="q3"> <span>80% 이상 만족스러우면 나머지는 교사가 직접 수정하는 것이 효율적이다</span>
+    </label>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 송석리 (석리송) | <a href='https://eduflow-greatsong.fly.dev/'>EduFlow</a>로 제작
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.indexes", "navigation.instant", "navigation.path", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../javascripts/title-link.js"></script>
+      
+        <script src="../javascripts/mermaid-config.js"></script>
+      
+        <script src="../javascripts/scroll-progress.js"></script>
+      
+        <script src="../javascripts/quiz-engine.js"></script>
+      
+    
+  </body>
+</html>
