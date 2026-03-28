@@ -1653,7 +1653,11 @@ summary:focus-visible {
 }
 
 /* MkDocs 기본 footer nav 숨김 (커스텀 네비게이션 사용) */
-.md-footer__inner { display: none; }
+.md-footer__inner,
+nav.md-footer__inner,
+.md-footer .md-footer__inner {
+  display: none !important;
+}
 
 /* 챕터 네비게이션 */
 .ef-chapter-nav {
@@ -1756,21 +1760,21 @@ summary:focus-visible {
   .ef-chapter-nav__next { text-align: left; justify-content: flex-start; }
 }
 
-/* === Color Theme Override: amber === */
+/* === Color Theme Override: blue === */
 :root {
-  --ef-primary: #ea580c;
-  --ef-primary-dark: #c2410c;
-  --ef-primary-light: #fff7ed;
-  --ef-primary-lighter: #fffbeb;
-  --ef-accent: #f59e0b;
-  --ef-primary-text: #7c2d12;
-  --ef-primary-border: #fed7aa;
-  --ef-primary-deep: #431407;
-  --ef-primary-deep-mid: #7c2d12;
-  --ef-code-border: #ffedd5;
-  --ef-footer-link: #fdba74;
-  --ef-footer-link-hover: #fed7aa;
+  --ef-primary: #2563eb;
+  --ef-primary-dark: #1d4ed8;
+  --ef-primary-light: #eff6ff;
+  --ef-primary-lighter: #f0f9ff;
+  --ef-accent: #0ea5e9;
+  --ef-primary-text: #1e3a5f;
+  --ef-primary-border: #bfdbfe;
+  --ef-primary-deep: #172554;
+  --ef-primary-deep-mid: #1e3a5f;
+  --ef-code-border: #dbeafe;
+  --ef-footer-link: #93c5fd;
+  --ef-footer-link-hover: #bfdbfe;
 }
 [data-md-color-scheme="slate"] {
-  --ef-primary-text: #fdba74;
+  --ef-primary-text: #93c5fd;
 }
