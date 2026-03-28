@@ -1756,21 +1756,21 @@ summary:focus-visible {
   .ef-chapter-nav__next { text-align: left; justify-content: flex-start; }
 }
 
-/* === Color Theme Override: teal === */
+/* === Color Theme Override: amber === */
 :root {
-  --ef-primary: #0d9488;
-  --ef-primary-dark: #0f766e;
-  --ef-primary-light: #f0fdfa;
-  --ef-primary-lighter: #f0fdf4;
-  --ef-accent: #10b981;
-  --ef-primary-text: #134e4a;
-  --ef-primary-border: #99f6e4;
-  --ef-primary-deep: #042f2e;
-  --ef-primary-deep-mid: #134e4a;
-  --ef-code-border: #ccfbf1;
-  --ef-footer-link: #5eead4;
-  --ef-footer-link-hover: #99f6e4;
+  --ef-primary: #ea580c;
+  --ef-primary-dark: #c2410c;
+  --ef-primary-light: #fff7ed;
+  --ef-primary-lighter: #fffbeb;
+  --ef-accent: #f59e0b;
+  --ef-primary-text: #7c2d12;
+  --ef-primary-border: #fed7aa;
+  --ef-primary-deep: #431407;
+  --ef-primary-deep-mid: #7c2d12;
+  --ef-code-border: #ffedd5;
+  --ef-footer-link: #fdba74;
+  --ef-footer-link-hover: #fed7aa;
 }
 [data-md-color-scheme="slate"] {
-  --ef-primary-text: #5eead4;
+  --ef-primary-text: #fdba74;
 }
